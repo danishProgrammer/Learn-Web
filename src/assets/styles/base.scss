@@ -1,21 +1,22 @@
-::ng-deep *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
-   list-style: none;
-   text-decoration: none;
-}
-
 
 $navbar_height:5rem;
 
 $max_width:100vw;
 $max_height:100vh;
 
-$white:white;
-$blue:#0082e6;
-$light_blue:#1b9bff;
-$dark_blue:#2c3e50;
+$card_width:18vw;
+$card_height:36vh;
+
+
+$color--white:#ffffff;
+$color--gray:#585b63;
+
+$color--light_gray:#d2d3d7;
+$color--bright_gray:#a5a7af;
+
+$color--blue:#0082e6;
+$color--light_blue:#1b9bff;
+$color--dark_blue:#2c3e50;
 
 $phone_devices_max_width:37.5rem;
 $tablet_devices_max_width:59.5rem;

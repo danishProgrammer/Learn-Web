@@ -37,6 +37,11 @@
               "src/styles.scss",
               "node_modules/font-awesome/css/font-awesome.css"
             ],
+            "stylePreprocessorOptions":{
+              "includePaths": [
+                "src/assets/styles"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

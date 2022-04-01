@@ -1,0 +1,26 @@
+@import 'global';
+
+.learn-courses-wrapper{
+    header{
+        padding: 6rem 1rem;
+        width: 50vw;
+        margin: auto;
+        height: 35vh;
+        text-align: center; 
+        .heading{
+            margin: 1rem 0;
+        } 
+    }   
+    &-content{
+        width: $max_width - 20;
+        margin: auto;
+        h3{
+            padding: 1rem 0;
+        }
+        section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+}

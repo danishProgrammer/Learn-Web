@@ -1,8 +1,8 @@
 
-@import '../../assets/styles/base';
-
+// @import url('../../assets/styles/_global.scss');
+@import 'global';
 nav{
-    background: $blue;
+    background: $color--blue;
     height: $navbar_height;
     width: $max_width;
     .logo{
@@ -12,7 +12,7 @@ nav{
             margin-right: 0.62rem;
         }
         vertical-align: middle;
-        color:$white;
+        color:$color--white;
         font-size: 2.18rem;
         line-height: $navbar_height;
         padding: 0 6.25rem;
@@ -20,7 +20,7 @@ nav{
     }
     .checkbtn{
         font-size: 1.87rem;
-        color: $white;
+        color: $color--white;
         float: right;
         margin-right: 2.5rem;
         line-height: $navbar_height;
@@ -37,14 +37,14 @@ nav{
             line-height: $navbar_height;
             margin: 0 0.25rem;
             a{
-                color: $white;
+                color: $color--white;
                 font-size: 1.063rem;
                 border-radius: 0.25rem;
                 padding: 0.43rem 0.81rem;
                 text-transform: uppercase;
             }
             a:hover,a.active{
-                background: $light_blue;
+                background: $color--light_blue;
                 transition: .5s;
             }
         }
@@ -72,7 +72,7 @@ nav{
             position: fixed;
             width: $max_width;
             height: $max_height;
-            background: $dark_blue;
+            background: $color--dark_blue;
             top: $navbar_height;
             left: -100%;
             text-align: center;
@@ -86,7 +86,7 @@ nav{
                 }
                 a:hover,a.active{
                     background: none;
-                    color: $light_blue;
+                    color: $color--light_blue;
                 }
             }
         }

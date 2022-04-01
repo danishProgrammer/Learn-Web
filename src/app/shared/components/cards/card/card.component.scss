@@ -1,0 +1,14 @@
+@import 'global';
+
+.card
+{
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 1px solid $color--light_gray;
+    width: $card_width;
+    height: $card_height;
+    margin: 1rem 1rem 1rem 0rem;  
+    &-header{
+        display: flex;
+    }
+}
