@@ -1,0 +1,97 @@
+
+@import '../../assets/styles/base';
+
+nav{
+    background: $blue;
+    height: $navbar_height;
+    width: $max_width;
+    .logo{
+        img{
+            width: 2.5rem;
+            height: 1.55rem;
+            margin-right: 0.62rem;
+        }
+        vertical-align: middle;
+        color:$white;
+        font-size: 2.18rem;
+        line-height: $navbar_height;
+        padding: 0 6.25rem;
+        font-weight: bold;
+    }
+    .checkbtn{
+        font-size: 1.87rem;
+        color: $white;
+        float: right;
+        margin-right: 2.5rem;
+        line-height: $navbar_height;
+        cursor: pointer;
+    }
+    #check,.checkbtn{
+        display: none;
+    }
+    ul{
+        float: right;
+        margin-right: 1.25rem;
+        li{
+            display: inline-block;
+            line-height: $navbar_height;
+            margin: 0 0.25rem;
+            a{
+                color: $white;
+                font-size: 1.063rem;
+                border-radius: 0.25rem;
+                padding: 0.43rem 0.81rem;
+                text-transform: uppercase;
+            }
+            a:hover,a.active{
+                background: $light_blue;
+                transition: .5s;
+            }
+        }
+    }
+
+   @include for-tablet-devices{
+        label.logo{
+            font-size: 1.87rem;
+            padding-left: 3.12rem;
+        }
+        ul{
+            li{
+                a{
+                  font-size: 1rem;  
+                }
+            }
+        }
+    }
+
+    @include for-phone-devices {
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: $max_width;
+            height: $max_height;
+            background: $dark_blue;
+            top: $navbar_height;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            li{
+                display: block;
+                margin: 3.12rem 0;
+                line-height: 1.87rem;
+                a{
+                  font-size: 1.25rem;  
+                }
+                a:hover,a.active{
+                    background: none;
+                    color: $light_blue;
+                }
+            }
+        }
+        #check:checked ~ul{
+            left: 0;
+        }
+    }
+}
