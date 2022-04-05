@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Card } from 'src/app/shared/types/types';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
 
   constructor() { }
-
+  @Input() card!:Card;
   ngOnInit(): void {
   }
 

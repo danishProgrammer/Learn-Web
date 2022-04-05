@@ -2,13 +2,30 @@
 
 .card
 {
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 0.625rem;
     border: 1px solid $color--light_gray;
     width: $card_width;
     height: $card_height;
-    margin: 1rem 1rem 1rem 0rem;  
+    margin: 1rem 2rem 1rem 0rem;  
     &-header{
         display: flex;
     }
+    &-main{
+        img{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        h4{
+            margin: 1rem 0;
+        }
+    }
+}
+
+.card:hover{
+    border: 2px solid $color--blue;
+    cursor: pointer;
 }

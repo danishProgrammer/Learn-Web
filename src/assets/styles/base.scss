@@ -4,7 +4,7 @@ $navbar_height:5rem;
 $max_width:100vw;
 $max_height:100vh;
 
-$card_width:18vw;
+$card_width:350px;
 $card_height:36vh;
 
 
@@ -18,8 +18,8 @@ $color--blue:#0082e6;
 $color--light_blue:#1b9bff;
 $color--dark_blue:#2c3e50;
 
-$phone_devices_max_width:37.5rem;
-$tablet_devices_max_width:59.5rem;
+$phone_devices_max_width:767px;
+$tablet_devices_max_width:1024px;
 
 
 @mixin for-phone-devices {

@@ -10,7 +10,7 @@
   <main class="learn-courses-wrapper-content">
       <h3>Courses</h3>
       <section>
-        <app-card></app-card>
+        <app-card *ngFor="let info of cardsInfo" [card]="info"></app-card>
       </section>
       
   </main>

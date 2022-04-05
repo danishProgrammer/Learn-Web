@@ -1,11 +1,13 @@
 <div class="card">
     <header class="card-header">
-        
+        <h4> {{card.heading}}</h4>
+
     </header>
     <main class="card-main">
-
+        <img [src]="card.imgPath" [alt]="card.description">
+        <h4>{{card.name}}</h4>
+        <div class="course-description">
+            {{card.description}}
+        </div>
     </main>
-    <footer class="card-footer">
-
-    </footer>
 </div>
